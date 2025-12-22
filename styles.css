@@ -1,0 +1,410 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/* ================= BODY & BACKGROUND ================= */
+body {
+  background-color: #06070c;
+  background-image:
+    linear-gradient(rgba(6, 7, 12, 0.88), rgba(6, 7, 12, 0.88)),
+    url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 10%;
+  animation: backgroundZoom 3s ease forwards;
+}
+
+/* ================= HEADER ================= */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 45px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #3FA2F6;
+}
+
+/* ================= TOP CONTACT ================= */
+.top-contact {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.top-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  transition: 0.3s;
+}
+
+.top-contact i {
+  color: #3FA2F6;
+}
+
+.top-contact a:hover {
+  color: #3FA2F6;
+}
+
+/* ================= HERO ================= */
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional profile image */
+.hero-right::before {
+  content: "";
+  width: 320px;
+  height: 420px;
+  background: url("Lee.JPG") center/cover no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(63, 162, 246, 0.3);
+}
+
+/* ================= TEXT ================= */
+h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3FA2F6;
+  margin-bottom: 30px;
+  animation: fadeIn 1.4s ease forwards;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  line-height: 1.7;
+  max-width: 550px;
+  margin-bottom: 40px;
+  animation: fadeIn 1.6s ease forwards;
+}
+
+/* ================= BUTTONS ================= */
+.cta {
+  margin-bottom: 40px;
+}
+
+.cta button {
+  width: 180px;
+  padding: 14px 0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.cta-1 {
+  background-color: #3FA2F6;
+  color: black;
+}
+
+.cta-1:hover {
+  background: transparent;
+  color: #3FA2F6;
+  border: 2px solid #3FA2F6;
+}
+
+.cta-2 {
+  background: transparent;
+  border: 2px solid #3FA2F6;
+  color: #3FA2F6;
+}
+
+.cta-2:hover {
+  background-color: #3FA2F6;
+  color: black;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon i {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #3FA2F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3FA2F6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icon i:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 12px #3FA2F6;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 100px 0;
+}
+
+section:not(#hero) {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+section h2 {
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
+
+section > p {
+  max-width: 650px;
+  margin-bottom: 50px;
+}
+
+/* ================= SKILLS ================= */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  background: rgba(63, 162, 246, 0.18);
+  transform: translateY(-6px);
+}
+
+/* ================= PROJECTS ================= */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.project-card h3 {
+  color: #3FA2F6;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(63, 162, 246, 0.25);
+}
+
+/* ================= EDUCATION / INTERNSHIP ================= */
+/* ================= EDUCATION / INTERNSHIP / ACHIEVEMENTS ================= */
+#education,
+#internship,
+#achievements {
+  max-width: 800px;
+}
+
+#education p,
+#internship p,
+#achievements p {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  transition: 0.3s;
+}
+
+#education p:hover,
+#internship p:hover,
+#achievements p:hover {
+  background: rgba(63, 162, 246, 0.15);
+  transform: translateY(-4px);
+}
+
+#education strong,
+#internship strong {
+  color: #3FA2F6;
+  font-size: 1.1rem;
+}
+
+/* ================= CONTACT FORM ================= */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3FA2F6;
+}
+
+.contact-form button {
+  width: 180px;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background-color: #3FA2F6;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: transparent;
+  color: #3FA2F6;
+  border: 2px solid #3FA2F6;
+}
+
+/* Mobile Contact */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundZoom {
+  from {
+    background-size: 80%;
+  }
+  to {
+    background-size: 100%;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  body {
+    padding: 0 5%;
+  }
+
+  #hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-left {
+    justify-content: center;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .top-contact {
+    gap: 15px;
+  }
+}
