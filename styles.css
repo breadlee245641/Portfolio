@@ -97,7 +97,7 @@ nav {
   content: "";
   width: 320px;
   height: 420px;
-  background: url("Lee.JPG") center/cover no-repeat;
+  background: url("bread.png") center/cover no-repeat;
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(63, 162, 246, 0.3);
 }
