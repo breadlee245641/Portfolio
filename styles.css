@@ -255,6 +255,30 @@ section > p {
   box-shadow: 0 10px 40px rgba(63, 162, 246, 0.25);
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.project-card h3 {
+  color: #3FA2F6;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(63, 162, 246, 0.25);
+}
+
 /* ================= EDUCATION / INTERNSHIP ================= */
 /* ================= EDUCATION / INTERNSHIP / ACHIEVEMENTS ================= */
 #education,
