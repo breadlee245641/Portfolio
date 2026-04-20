@@ -457,6 +457,35 @@ footer {
     display: none;
   }
 
+  /* FIX WHITE INPUT FIELDS */
+.contact-form input,
+.contact-form textarea {
+  background: #1e293b;
+  color: #ffffff;
+  border: 1px solid #334155;
+}
+
+/* Placeholder color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* When clicking input */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #1e293b;
+  color: #ffffff;
+  border: 1px solid #00adb5;
+}
+
+/* Fix button */
+.contact-form button {
+  background: #00adb5;
+  color: #ffffff;
+  opacity: 1;
+}
+
   .top-contact {
     gap: 15px;
   }
