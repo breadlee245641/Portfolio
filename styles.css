@@ -340,67 +340,73 @@ section > p {
   width: 50%;
 }
 
-/* Inputs & Textarea */
+/* ================= CONTACT FORM ================= */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px;
   border-radius: 8px;
-  background: #1e293b;
-  color: #fff;
+  font-size: 1rem;
+  color: white;
   outline: none;
 }
 
-/* Placeholder */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #94a3b8;
+  color: #bdbdbd;
 }
 
-/* Textarea */
-.contact-form textarea {
-  resize: none;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3FA2F6;
 }
 
-/* BUTTON */
 .contact-form button {
-  background: #00adb5;
-  color: #fff;
-  padding: 12px 25px;
-  border: none;
+  width: 180px;
+  padding: 14px;
   border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background-color: #3FA2F6;
+  color: black;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .contact-form button:hover {
-  background: #007b80;
+  background-color: transparent;
+  color: #3FA2F6;
+  border: 2px solid #3FA2F6;
 }
 
-/* CONTACT INFO (email, phone, location) */
-.contact-info {
-  margin-top: 25px;
-  font-size: 16px;
-  color: #e2e8f0;
-}
-
-.contact-info p {
-  margin: 8px 0;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 600px) {
-  .input-row {
-    flex-direction: column;
-  }
-
-  .input-row input {
-    width: 100%;
+/* Mobile Contact */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
   }
 }
 
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+}
 
 /* ================= ANIMATIONS ================= */
 @keyframes fadeIn {
