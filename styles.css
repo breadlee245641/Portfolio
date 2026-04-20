@@ -264,6 +264,13 @@ section > p {
   max-width: 800px;
 }
 
+/* Clickable internship card */
+.internship-card {
+  display: block;
+  max-width: 800px;
+}
+
+/* Card styling */
 #education p,
 #internship p,
 #achievements p {
@@ -273,8 +280,10 @@ section > p {
   margin-bottom: 20px;
   line-height: 1.7;
   transition: 0.3s;
+  cursor: pointer; /* shows clickable */
 }
 
+/* Hover effect */
 #education p:hover,
 #internship p:hover,
 #achievements p:hover {
@@ -282,12 +291,12 @@ section > p {
   transform: translateY(-4px);
 }
 
+/* Heading highlight */
 #education strong,
 #internship strong {
   color: #3FA2F6;
   font-size: 1.1rem;
 }
-
 /* ================= CONTACT FORM ================= */
 .contact-container {
   display: grid;
